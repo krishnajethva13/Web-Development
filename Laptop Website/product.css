@@ -1,0 +1,24 @@
+.carouselslide{
+    float: left;
+}
+
+.page-content input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: peachpuff;
+    color: black;
+    font-size: 18px;
+    width: 200px;
+}
+
+
+.page-content input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+
+}
+

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <style>
+        .type{
+            text-align: left;
+            font-family: sans-serif;
+            text-decoration: underline;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: paleturquoise">
+        <a class="name" style="color: black">LAPTOPABLE</a>
+        <form class="form-inline">
+          <input
+            class="search"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn" style="background-color: peachpuff" type="submit">
+            Search
+          </button>
+        </form>
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-cart-plus" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-sign-in-alt" aria-hidden="true"></i>
+        </a>
+      </nav>
+    
+      <div class="type">
+        <h3>Products</h3>
+      </div>
+
+      <input type="submit" style="margin-left: 10px;" name="" value="Add Products">
+
+      <div class="dropdown" style="margin-top: 10px; margin-left: 4px">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="width: 100%;"
+        >
+            Select category
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Gaming</a>
+          <a class="dropdown-item" href="#">creatore</a>
+          <a class="dropdown-item" href="#">Proffesionals</a>
+        </div>
+      </div>
+
+      <table id="r1"><td>
+        <table border="1" style="margin-top: 10PX;">
+        
+        <tr align="center">
+            <td>Image</td>
+            <td>Name</td>
+            <td>Category</td>
+            <td>Description</td>
+            <td>Price</td>
+            <td>Action</td>
+        </tr>
+        <tr align="center">
+            <td align="center"><img src="images/c1.jpg" height="150px" width="150px"></td>
+            <td align="center">Xiaomi NotebookPro </td>
+            <td align="center">Professional</td>
+            <td align="center">Xiaomi NotebookPro QHD+ IPS AntiGlare Display Intel Core i5-11300H
+                11th Gen 14 inch<br>(35.56 cm) Thin & Light Laptop(8GB/512GB SSD/Iris Xe<br>
+                Graphics/Windows 11/MS Office<br> 21/Backlight KB/FP Sensor/1.4 Kg)
+                </td>
+            <td align="center">₹51,499</td>
+            <td align="center">
+                <input type="submit" value="Add Product" style="height: 50px;width: 200px; background-color: peachpuff;"><br>
+                <input type="submit" value="Remove Product" style="height: 50px;width: 200px;background-color: peachpuff;">
+            </td>
+        </tr>
+        <tr align="center">
+            <td align="center"><img src="images/c9.jpg" height="150px" width="150px"></td>
+            <td align="center">Acer Aspire 5</td>
+            <td align="center">Creators</td>
+            <td align="center">Acer Aspire 5 12th Gen Intel Core i5<br> (16 GB RAM/512 GB SSD/Windows
+                11 Home/MS <br>Office 2021/ Fingerprint Reader/Backlit <br>Keyboard/Safari
+                Gold/ 1.76 KG/ A515-57,<br>Flat Rs: 2000 of All Bank Cards).</td>
+            <td align="center">₹61,990</td>
+            <td align="center">
+                <input type="submit" value="Add Product" style="height: 50px;width: 200px;background-color: peachpuff;"><br>
+                <input type="submit" value="Remove Product" style="height: 50px;width: 200px;background-color: peachpuff;">
+            </td>
+        </tr>
+        <tr align="center">
+            <td align="center"><img src="images/C7.jpg" height="150px" width="150px"></td>
+            <td align="center">Acer Aspire 5</td>
+            <td align="center">Gaming</td>
+            <td align="center">HP Victus Gaming Latest AMD Ryzen 5 5600H Processor 16.1 inch<BR>(40.9
+                cm) FHD Gaming Laptop (8GB RAM/512GB SSD/4GB Radeon RX5500M
+                Graphics/B&O/Backlit)</td>
+            <td align="center">₹61,990</td>
+            <td align="center">
+                <input type="submit" value="Add Product" style="height: 50px;width: 200px;background-color: peachpuff;"><br>
+                <input type="submit" value="Remove Product" style="height: 50px;width: 200px;background-color: peachpuff;">
+            </td>
+        </tr>
+        
+        </table>
+    </td>
+            
+        
+    </table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+                
+
+
+
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

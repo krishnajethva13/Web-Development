@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/login\ page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-color: oldlace;
+    
+}
+.registrationbox{
+    width: 350px; 
+    height: 650px;
+    background: aquamarine;
+    margin: 70px;
+    padding-right: 50px;
+    justify-items: center;
+    top: 50%;
+    left: 45%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    padding: 30px 30px;
+
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    
+}
+
+
+
+.registrationbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.registrationbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registrationbox input[type="text"], input[type="password"], input[type="date"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+       
+}
+
+.registrationbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: peachpuff;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.registrationbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+
+}
+
+.registrationbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+.registrationbox a:hover
+{
+    color: #ffc107;
+}
+
+.msg{
+    color: red;
+}

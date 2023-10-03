@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration lptpwalidation.css">
+</head>
+<body>
+    <table style="background-color: peachpuff; width: 100%;display: grid;">
+        <tr align="center">
+            <td style="width: 10px;">
+                <img src="images/logo home.png" height="60px" width="60px"></img>
+            </td>
+            <td style="padding-bottom: 5px; padding-left: 10px;">
+                <P style="font-family: calibri; padding-right: 20px;"> <b>LAPTOPABLE</b></P>
+            </td>
+            <td style="padding-left: 500px;">
+                <input class="solid" type="text" name="search" id="search" style="width: 300px;">
+            </td>
+            <td style="padding-right: 80px;">
+                <a href="search.html"><img class="button" src="images/se-removebg-preview.png" height="30px"></a>
+            </td>
+
+            <td style="padding-right: 80px;">
+                <a href="search.html"><img class="button" src="images/ka-removebg-preview.png" height="40px"></a>
+            </td>
+            <td style="padding-right: 20px;">
+                <a href="search.html"><img class="button" src="images/akk-removebg-preview.png" height="40px"></a>
+            </td>
+        </tr>
+    </table> 
+
+    <div class="registrationbox">
+    <h1>Register Here</h1>
+    <form action="#" method="post" onSubmit="return validate(this);" name="form">
+        <p>First Name</p>
+        <input type="text" name="" placeholder="Enter Firstname" id="fn">
+        <span class="msg" id="msg1"></span><br>
+        <p>Last Name</p>
+        <input type="text" name="" placeholder="Enter Lastname" id="ln">
+        <span class="msg" id="msg2"></span><br>
+        <p >E-mail</p>
+        <input type="text" name="" placeholder="Enter E-mail" id="email">
+        <span class="msg" id="msg3"></span><br>
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password" id="pass" >
+        <span class="msg" id="msg4"></span><br>
+        <p>Confirm Password</p>
+        <input type="password" name="" placeholder="Re-enter Password" id="cpass">
+        <span class="msg" id="msg5"></span><br>
+        <p>Birthdate</p>
+        <input type="date" name="" placeholder="Enter Password" required>
+        <input type="submit" name="" value="Sign Up">
+
+        <div style="text-align: center;">
+        <a href="#">Log in</a>
+    </div>
+    </form>
+    </div>
+    <script>
+        var ck_fn = /^[A-Z,a-z,0-9]{3,20}$/;
+        var ck_ln = /^[A-Z,a-z,0-9]{3,20}$/;
+        var ck_email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{5,30}$/;
+        var ck_pass = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+        var ck_cpass =/^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+
+        function validate(form){
+            var fn = form.fn.value;
+            var ln = form.ln.value;
+            var email = form.email.value;
+            var pass = form.pass.value;
+            var cpass = form.cpass.value;
+
+            var error =[];
+
+            if (!ck_fn.test(fn)) {
+          document.getElementById("msg1").innerHTML ="*Please enter proper name";
+        }
+        if (!ck_ln.test(ln)){
+          document.getElementById("msg2").innerHTML ="*Please enter proper name";
+        }
+        if (!ck_email.test(email)){
+            document.getElementById("msg3").innerHTML ="*Please enter valid email";
+        }
+        if(!ck_pass.test(pass)){
+           document.getElementById("msg4").innerHTML ="*Please enter the password of min 6 char";
+        }
+        if(!ck_cpass.test(cpass)){
+          document.getElementById("msg5").innerHTML = "*Please enter same password";
+        }
+
+        return false;
+        }
+    </script>
+</body>
+</html>
