@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginweb.css">
+</head>
+<body>
+    <table style="background-color: peachpuff; width: 100%; display: grid;">
+        <tr align="center">
+            <td style="width: 10px;">
+                <img src="images/logo home.png" height="60px" width="60px"></img>
+            </td>
+            <td style="padding-bottom: 5px; padding-left: 10px;">
+                <P style="font-family: calibri; padding-right: 20px;"> <b>LAPTOPABLE</b></P>
+            </td>
+            <td style="padding-left: 500px;">
+                <input class="solid" type="text" name="search" id="search" style="width: 300px;">
+            </td>
+            <td style="padding-right: 80px;">
+                <a href="search.html"><img class="button" src="images/se-removebg-preview.png" height="30px"></a>
+            </td>
+
+            <td style="padding-right: 80px;">
+                <a href="search.html"><img class="button" src="images/ka-removebg-preview.png" height="40px"></a>
+            </td>
+            <td style="padding-right: 20px;">
+                <a href="search.html"><img class="button" src="images/akk-removebg-preview.png" height="40px"></a>
+            </td>
+        </tr>
+    </table> 
+    <div class="loginbox">
+    <h1>Login Here</h1>
+    <form action="#" method="post" onSubmit="return validate(this);" name="form">
+        <p class="f">User Name</p>
+        <input type="text" name="" placeholder="Enter Username" id="email">
+        <span id="msg1" class="msg"></span>
+        <p class="f">Password</p>
+        <input type="password" name="" placeholder="Enter Password" id="pass">
+        <span id="msg2" class="msg"></span>
+        <input type="submit" name="" value="Login">
+        <a href="#">Forgot password?</a>
+        <a href="#">Don't have an account?</a>
+    </form>
+
+         
+    </div>
+    <script>
+        var ck_email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{5,30}$/;
+        var ck_pass = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+
+        function validate(form){
+            var email = form.email.value;
+            var pass = form.pass.value;
+            
+
+            var error = []
+
+            if(!ck_email.test(email)){
+                document.getElementById("msg1").innerHTML = "Please enter valid username";
+            }
+            if(!ck_pass.test(pass)){
+                document.getElementById("msg2").innerHTML = "Please enter valid password";
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
